@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+nav{
+  width: 80%;
+  margin: auto;
+  /* background-color: grey; */
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div.left, nav > div.right{
+  display: flex;
+  align-items: center;
+}
+
+nav > div.left img{
+  height: 100px;
+}
+
+nav > div.left ul, nav > div.right ul{
+  list-style: none;
+  display: flex;
+}
+
+nav > div.left ul li{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+nav > div.left ul li a, nav > div.right ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav > div.right ul li{
+  font-size: 18px;
+  padding-right: 20px;
+  position: relative;
+}
+
+nav > div.right > div a{
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #b40021;
+  color: white;
+  text-decoration: none;
+}
+
+nav > div.right ul li:not(:first-of-type) > .menu_tendina{
+  position: absolute;
+  top: 40px;
+  left: 60%;
+  transform: translate(-50%);
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav > div.right ul li:not(:first-of-type)  > .menu_tendina > div{
+  display: inline-block;
+}
+
+nav > div.right ul li:not(:first-of-type)  > .menu_tendina > div {
+  padding: 10px 15px;
+}
+
+.active{
+  display: block;
+}
+
+nav > div.right ul li:first-of-type > .menu_tendina{
+  position: absolute;
+  top: 40px;
+  left: 60%;
+  transform: translate(-50%);
+  background-color: #242526;
+  border-radius: 10px;
+  padding: 10px 10px;
+  width: 420px;
+  text-align: center;
+}
+
+nav > div.right ul li:first-of-type > .menu_tendina > div{
+  display: inline-block;
+}
+
+nav > div.right ul li:first-of-type > .menu_tendina > div > div {
+  padding: 10px 25px;
+}
+
+li > div{
+  display: none;
+}
